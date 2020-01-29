@@ -1,0 +1,85 @@
+/*
+	Author: Uga Sprogis
+	Creation date: 29.01.2020
+	Styling for the index.html file
+*/
+
+
+//One mixin was made for desktop users since overally the design looks good on all devices
+@mixin for-desktop {
+	@media (min-width: 600px) { @content; }
+}
+
+//The styling is made according to the html starting from top to bottom. 
+
+main {
+	margin: 20px;
+	background-color: #e6e6ff;
+	font-family: 'Roboto', sans-serif;
+
+	header {
+		#title {
+			font-size: 50px;
+		}
+
+		text-align: center;
+		padding-top: 20px;
+
+		q {
+			font-size: 40px;
+			font-family: 'Dancing Script', cursive;
+		}
+
+		figure {
+			padding-top: 30px;
+			padding-bottom: 20px;
+			background-color: white;
+
+			img {
+				display: block;
+ 				margin-left: auto;
+  				margin-right: auto;
+  				max-width: 100%;
+			}
+		}
+	}
+	section {
+		#description {
+			margin-left: 20%;
+			margin-right: 20%;
+			font-size: 25px;
+		}
+
+		text-align: justify;
+		padding-bottom: 20px;
+
+		@include for-desktop {
+			text-align: center;
+		}
+
+		li {
+			text-align: justify;
+			padding: 10px 0px;
+			font-size: 18px;
+			margin: 0px;
+
+			@include for-desktop {
+				margin-left: 30%;
+				margin-right: 30%;
+			}
+		}
+
+		h3 {
+			font-size: 25px;
+		}
+	
+		a {
+			color: blue;
+		}
+
+		#extra-info {
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+}
