@@ -35,3 +35,5 @@ Files are short in code line count so there are little comments.
 
 Download the index.html and style.css files in one directory and use a web browser to open the index.html file.
 Page is also available at CodePen.io. Link: https://codepen.io/USprogis/pen/bGNyedm
+For user story verification the index.html file contains FCC external script that checks if the user stories are completed.
+To use the checker, click a button that appears in the top left corner and select the tribute page test suite from dropdown menu and click button "Run Tests".
