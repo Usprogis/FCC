@@ -25,7 +25,7 @@ main {
         margin-right: auto;
         max-width: 100%; }
   main section {
-    text-align: justify;
+    text-align: center;
     padding-bottom: 20px; }
     main section #description {
       margin-left: 20%;
@@ -36,9 +36,10 @@ main {
         text-align: center; } }
     main section li {
       text-align: justify;
-      padding: 10px 0px;
+      padding-right: 10%;
       font-size: 18px;
-      margin: 0px; }
+      padding-bottom: 10px;
+      padding-top: 10px; }
       @media (min-width: 600px) {
         main section li {
           margin-left: 30%;
