@@ -25,16 +25,15 @@ User Story #9: The img element should be centered within its parent element.
 Project contains these files:
 - index.html - pages backbone
 - style.scss - styling writed in scss for better usage
-- style.css - styling linked to index.html compiled using compass
 
 ---
-Index.html and style.css files are verified by the W3c validators.
+Index.html and style.scss files are verified by the W3c validators.
 Files are short in code line count so there are little comments.
 
 ### Usage
 
-Download the index.html and style.css files in one directory and use a web browser to open the index.html file.
-Page is also available at CodePen.io. Link: https://codepen.io/USprogis/pen/bGNyedm
+Pull the repo and index.html and style.scss files in one directory. You can use a online SCSS to CSS converter or use ruby Compass (http://compass-style.org/) to convert the code. After that, use a web browser to open the index.html file and see the page.
+The Tribute Page is also available at CodePen.io. Link: https://codepen.io/USprogis/pen/bGNyedm
 
 For user story verification the index.html file contains FCC external script that checks if the user stories are completed.
 
