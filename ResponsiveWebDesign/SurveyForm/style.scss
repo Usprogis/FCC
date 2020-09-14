@@ -1,0 +1,107 @@
+/*
+	Author: Uga Sprogis
+	Creation date: 29.01.2020
+	Styling for the index.html file
+*/
+
+
+//One mixin was made for desktop users since overally the design looks good on all devices
+@mixin for-desktop {
+	@media (min-width: 600px) { @content; }
+}
+
+//The styling is made according to the html starting from top to bottom. 
+
+body {
+    background-image: url("https://static.officeholidays.com/images/935x475t/latvia-milda-01.jpg");
+    background-size: cover;
+    object-fit: fill;
+
+    h1 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #description,
+    p {
+        text-align: center;                    
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #survey-form {
+        background-color: white;
+        opacity: 80%;
+        margin-left: 20%;
+        margin-right:20%;
+        width: 60%;
+        padding-top: 30px;
+        border: 4px;
+        z-index: 10;
+
+        .form-group {
+            padding-bottom: 10px;
+        }
+
+        #dropdown,
+        label,
+        input {
+            margin-left: 10%;
+        }
+
+        #dropdown,
+        input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            width: 80%;
+        }
+
+        label,
+        .input {
+            line-height: 40px;
+            margin-top: 20px;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+
+            @include for-desktop {
+                font-size: medium;
+            }
+        }
+
+        .input {
+            width: 0%;
+            float: right;
+            display: inline-block;
+            margin-right: 5%;
+            margin-left: 5%;
+
+            @include for-desktop {
+                margin-left: 5%;
+                margin-right: 20%;
+            }
+        }
+
+        #comments {
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            height: 200px;
+        }
+
+        textarea::placeholder {
+            font-size: 20px;
+            color: black;            
+        }
+
+        #submit {
+            font-weight: bold;
+            color: black;
+            background-color: #008000;
+            width: 40%;
+            height: 50px;
+            margin: 20px 30%;
+            z-index: 5;
+        }
+
+    }
+}
