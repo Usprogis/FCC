@@ -46,7 +46,7 @@ Files are short in code line count so there are little comments.
 ### Usage
 
 Pull the repo and index.html and style.scss files in one directory. You can use a online SCSS to CSS converter or use ruby Compass (http://compass-style.org/) to convert the code. After that, use a web browser to open the index.html file and see the page.
-The Tribute Page is also available at CodePen.io. Link: https://codepen.io/USprogis/pen/bGNyedm
+The Tribute Page is also available at CodePen.io. Link: https://codepen.io/USprogis/pen/YzqvJYj
 
 For user story verification the index.html file contains FCC external script that checks if the user stories are completed.
 
