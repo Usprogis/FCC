@@ -45,6 +45,7 @@ body {
         #dropdown,
         label,
         input {
+            line-height: 2.5;
             margin-left: 10%;
         }
 
@@ -56,29 +57,43 @@ body {
             width: 80%;
         }
 
-        label,
-        .input {
-            line-height: 40px;
-            margin-top: 20px;
-            font-size: small;
-            font-family: Arial, Helvetica, sans-serif;
+        #form-group-radio {
+        label {
+            margin-left: 10%;
+            width: 50%;
+            height: auto;
+            margin-right: 10%;
+            line-height: 2.5;
 
             @include for-desktop {
-                font-size: medium;
+                margin-left: 26%;
             }
         }
-
-        .input {
-            width: 0%;
+        input {
+            width: 5%;
             float: right;
-            display: inline-block;
-            margin-right: 5%;
-            margin-left: 5%;
+            margin-right: 30%;
 
             @include for-desktop {
-                margin-left: 5%;
-                margin-right: 20%;
+                margin-right: 10%;
             }
+        }
+        }
+
+        #form-group-checkbox { 
+        label {
+            margin-top: 20px;
+            margin-left: 25%;
+            width: 50%;
+            height: auto;
+            margin-right: 10%;
+            line-height: 2.5;
+        }
+        input {
+            width: 5%;
+            float: right;   
+            margin-right: 10%;
+        }
         }
 
         #comments {
@@ -101,6 +116,7 @@ body {
             height: 50px;
             margin: 20px 30%;
             z-index: 5;
+            cursor: pointer;
         }
 
     }
